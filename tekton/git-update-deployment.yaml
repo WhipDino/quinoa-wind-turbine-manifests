@@ -40,7 +40,7 @@ spec:
       resources: {}
       script: |
         cd git-update-digest-workdir/$(params.KUSTOMIZATION_PATH)
-        kustomize edit set image $(params.NEW_IMAGE):$(params.NEW_TAG)
+        kustomize edit set image el-wind-turbine=$(params.NEW_IMAGE):$(params.NEW_TAG)
 
         echo "##########################"
         echo "### kustomization.yaml ###"
